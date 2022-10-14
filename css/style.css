@@ -40,6 +40,10 @@ a:hover {
     color: var(--subtitle);
 }
 
+.link{
+    color: var(--modal);
+}
+
 img {
     width: 100%;
 }
