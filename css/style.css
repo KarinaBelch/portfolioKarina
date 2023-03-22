@@ -24,7 +24,12 @@ body {
     background-color: var(--background);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     color: var(--title);
 }
@@ -40,7 +45,7 @@ a:hover {
     color: var(--subtitle);
 }
 
-.link{
+.link {
     color: var(--modal);
 }
 
@@ -74,13 +79,13 @@ section {
 
 /*Theme*/
 
-.nav-item{
+.nav-item {
     display: flex;
     align-items: center;
     column-gap: 1.5rem;
 }
 
-.change-theme{
+.change-theme {
     font-size: 20px;
     color: var(--title);
     cursor: pointer;
@@ -101,7 +106,7 @@ section {
     font-weight: 600;
 }
 
-#sobre .person-is span{
+#sobre .person-is span {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 16px;
@@ -193,7 +198,7 @@ section {
     border-radius: 8px;
 }
 
-.softSkills img{
+.softSkills img {
     height: 46px;
 }
 
@@ -204,7 +209,7 @@ section {
 }
 
 /* PORTFOLIO */
-.portfolio-item{
+.portfolio-item {
     position: relative;
 }
 
@@ -212,7 +217,7 @@ section {
     border-radius: 8px;
 }
 
-.portfolio-item .iconbox{
+.portfolio-item .iconbox {
     background-color: transparent;
     border-radius: 1000px;
     position: absolute;
@@ -223,7 +228,7 @@ section {
     transition: all 0.4s ease;
 }
 
-.portfolio-item .iconbox img{
+.portfolio-item .iconbox img {
     height: 50px;
 }
 
@@ -233,12 +238,13 @@ section {
 }
 
 /*Contato*/
-form .form-control{
+form .form-control {
     background-color: transparent;
     border-color: var(--inputContact);
     color: var(--light);
 }
-form .form-control:focus{
+
+form .form-control:focus {
     box-shadow: none;
     border-color: var(--subtitle);
     background-color: var(--background);
@@ -260,16 +266,16 @@ footer {
 }
 
 /* Mensagem formulário */
-.color-red{
+.color-red {
     color: var(--danger);
 }
 
-.color-blue{
+.color-blue {
     color: var(--success);
 }
 
 /* Modo Claro*/
-body.light-theme{
+body.light-theme {
     --title: #21201E;
     --background: #FFFFFF;
     --divider: #F4F4F4;
@@ -282,17 +288,17 @@ body.light-theme{
 
 
 /* Css Responsive Owl Carousel*/
-.slider{
+.slider {
     margin-bottom: 0px;
     position: relative;
 }
 
-.slider .owl-item.active.center .slider-card{
+.slider .owl-item.active.center .slider-card {
     transform: scale(1.15);
     opacity: 1;
 }
 
-.slider-card{
+.slider-card {
     margin: 50px 15px 50px 15px;
     border-radius: 5px;
     transform: scale(0.9);
@@ -300,11 +306,11 @@ body.light-theme{
     transition: all 0.3s;
 }
 
-.slider-card img{
+.slider-card img {
     border-radius: 5px 5px 0px 0px;
 }
 
-.owl-nav .owl-next{
+.owl-nav .owl-next {
     position: absolute;
     top: calc(50% - 60px);
     right: 0;
@@ -314,7 +320,7 @@ body.light-theme{
     background-color: #F4F4F4;
 }
 
-.owl-nav .owl-prev{
+.owl-nav .owl-prev {
     position: absolute;
     top: calc(50% - 60px);
     left: 0;
@@ -339,15 +345,59 @@ body.light-theme{
     opacity: 100%;
 }
 
-.owl-dots button.owl-dot.active span{
+.owl-dots button.owl-dot.active span {
     background: var(--subtitle) !important;
     opacity: 100%;
 }
 
 
-.owl-dots, .owl-theme .owl-nav {
+.owl-dots,
+.owl-theme .owl-nav {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
+}
+
+/* Icones Flutuantes */
+.social {
+    position: fixed;
+    display: flex;
+    right: -150px;
+    top: 35%;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.social a {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+    transition: all 1s ease;
+}
+
+.social a:hover {
+    transform: translateX(-150px);
+}
+
+.social a svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;  
+
+}
+
+.social a.git {
+    background-color: #000000;
+}
+
+.social a.linkedin {
+    background-color: #0A66C2;
+}
+
+.social a.whattsapp {
+    background-color: #25D366;
 }
 
 
