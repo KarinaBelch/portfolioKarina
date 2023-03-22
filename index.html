@@ -224,11 +224,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 intro">
-                    <h1>Meu <span class="text-brand">Portfolio</span></h1>
-                    <p>Abaixo estão meus 5 projetos que fiz em cursos, treinamentos e por conta própria. </p>
+                    <h1>Meus <span class="text-brand">6 Projetos</span></h1>
+                    <p>Abaixo estão projetos que fiz em cursos, treinamentos e por conta própria. </p>
                 </div>
             </div>
             <div class="row g-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/capaBetterTogether.png" alt="" class="imagem">
+                        <a href="#" class="iconbox" data-bs-toggle="modal" data-bs-target="#project0">
+                            <img src="img/preview.svg" alt="">
+                        </a>
+                    </div>
+                </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="portfolio-item">
                         <img src="img/portfolio/capaQFOME.png" alt="" class="imagem">
@@ -274,6 +282,27 @@
     </section>
 
     <!-- Modal -->
+    <div class="modal fade" id="project0" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="staticBackdropLabel">Projeto BetterTogether</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <a href="https://apps.powerapps.com/play/e/default-cf36141c-ddd7-45a7-b073-111f66d0b30c/a/19a59f0f-3633-4a71-be77-9581ecb872b3?source=portal"
+                        target='_blank' rel='noopener noreferrer' class="link"><img src="img/portfolio/bodyBetterTogether.png" alt=""></a>
+                </div>
+                <div class="modal-footer">
+                    <p>O projeto foi desenvolvido por estágiarios da Avanade. O capital social humano é construído através de centenas de pequenas e grandes ações que realizamos todos os dias. Começamos com uma lista de quase 150 ideias, extraídas de sugestões feitas por muitas pessoas e grupos e atividades realizadas na Avanade. Experimente alguns destes ou tente o seu próprio. Precisamos aumentar essa lista. <a
+                            href=""
+                            target='_blank' rel='noopener noreferrer' class="link">clique aqui</a>.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -853,6 +882,7 @@
         crossorigin="anonymous"></script>
 
 
+
     <!-- Email -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -864,6 +894,17 @@
     <!-- Main JS -->
     <script src="js/main.js"></script>
 
+    <!-- Acessibilidade-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
 </body>
 
